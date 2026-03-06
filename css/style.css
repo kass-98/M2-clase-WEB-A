@@ -1,0 +1,23 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #a7c957;
+}
+
+/* Selector de clase */
+.class_selector{
+    font-size: 45px;
+    color: #b688c8;
+    font-weight: bold;
+}
+
+/* Selector de ID */
+#id_selector{
+    font-size: 35px;
+    color: #272727;
+    font-style: italic;
+}
+
