@@ -153,10 +153,12 @@ vh (viewport height, porcentaje de la altura de la ventana) */
     /* Posicionamiento */
     /* position: static; el elemento se posiciona de forma normal en el flujo del documento, este es el valor por defecto */
     /* position: relative; el elemento se posiciona de forma relativa a su posición normal, 
-    se pueden usar las propiedades top, right, bottom y left para mover el elemento desde su posición normal */
+    se pueden usar las propiedades top, right, bottom y left para mover el elemento desde su posición normal 
+    absolute, lo pone hasta arriba y ahi se queda
+    fixed: se coloca la card y si yo bajo se ve la informacion de la pagina pero la card se queda en la pantalla*/
     position: relative;
     top: 10px;
-
+right: 10px; 
     width: 600px;
     background-color: #eeeee9;
     border-radius: 15px;
@@ -192,3 +194,24 @@ vh (viewport height, porcentaje de la altura de la ventana) */
     font-size: 20px ;
     color: #272727 ;
 }   
+.letras-libreta-rayada{
+    font-family: 'Betania Patmos GDL', cursive !important;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp_image{
+    width: 25px;
+    cursor: pointer;
+}
+/* ejemplo de whatsapp_image sticky */
+/* sticky es una mezcla entre relative y fixed, y como su nombre lo indica, 
+el elemento se pega a su posición original hasta que se alcanza un punto específico en la página,
+ y luego se comporta como fixed */
+/* .whatsapp{
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+} */
