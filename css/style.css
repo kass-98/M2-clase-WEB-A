@@ -66,3 +66,42 @@ p, li{
     display: inline-block;
     background-color: #d3dc24;
 }
+
+.pseudo_hover{
+    background-color: green;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #a7c957;
+    font-size: 20px;
+    padding: 25px 10px 25px 10px;
+}
+
+.pseudo_hover:hover{
+    background-color: #a7c957;
+    color: #386641;
+    border: 2px solid #386641;
+    font-size: 20px;
+}
+
+.pseudo_focus{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #384066;
+}
+
+.pseudo_focus:focus{
+    background-color: #d3dc24;
+    border: 2px solid #386647;
+}
+
+.pseudo_active{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #663838;
+    background-color: rgba(184, 48, 48, 0.5);
+}
+
+.pseudo_active:active{
+    background-color: #af3131;
+    border: 2px solid #272727;
+}
