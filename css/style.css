@@ -1,3 +1,4 @@
+/*Selector general*/
 * {
     font-family: Arial, sans-serif;
 }
@@ -105,3 +106,89 @@ p, li{
     background-color: #af3131;
     border: 2px solid #272727;
 }
+
+/* Propiedades basicas de texto 
+p{
+    text-align: justify; /* se alinea el texto dependiendo de el valor que se le asigne 
+    text-decoration: underline; /* subraya el texto, también puede ser line-through para tachar el texto o overline para poner una línea encima del texto 
+    text-transform: uppercase; /* transforma el texto dependiendo del valor que se le asigne, puede ser lowercase para poner todo el texto en minúscula o capitalize para poner la primera letra de cada palabra en mayúscula
+    letter-spacing: 2px; /* a g r e g a  espacio entre cada letra, el valor se puede asignar en px, em, rem, etc. 
+    word-spacing: 10px; /* agrega   espacio   entre   cada palabra, el valor se puede asignar en px, em, rem, etc. 
+}
+*/
+
+/* Propiedades basicas de fuente */
+h2{
+    font-family: 'Courier New', Courier, monospace; /* cambia la fuente del texto, se pueden asignar varias fuentes, si la primera no está disponible se usará la siguiente */
+    font-size: 40px; /* cambia el tamaño de la fuente, el valor se puede asignar en px, em, rem, etc. */
+    font-weight: bold; /* cambia el grosor de la fuente, el valor puede ser normal, bold, bolder, lighter o un número del 100 al 900 */
+    font-style: italic; /* cambia el estilo de la fuente, el valor puede ser normal, italic o oblique */
+}
+
+/* Propiedades basicas de color */
+div{
+    color: #272727; /* cambia el color del texto, el valor se puede asignar en hexadecimal, rgb, rgba, hsl, hsla, etc. */
+    background-color: #a7c957; /* cambia el color de fondo del elemento, el valor se puede asignar en hexadecimal, rgb, rgba, hsl, hsla, etc. */
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: #386641;
+}
+.card_image{
+    width: 50%; /* cambia el ancho de la imagen, el valor se puede asignar en px, em, rem, etc. */
+    border-radius: 15px; /* redondea las esquinas de la imagen, el valor se puede asignar en px, em, rem, etc. */
+}
+
+/* las unidades de medida son: 
+px (píxeles), 
+em (relativo al tamaño de la fuente del elemento), 
+rem (relativo al tamaño de la fuente raíz),
+% (porcentaje del tamaño del elemento padre),
+vw (viewport width, porcentaje del ancho de la ventana), 
+vh (viewport height, porcentaje de la altura de la ventana) */
+
+.card{
+    /* Posicionamiento */
+    /* position: static; el elemento se posiciona de forma normal en el flujo del documento, este es el valor por defecto */
+    /* position: relative; el elemento se posiciona de forma relativa a su posición normal, 
+    se pueden usar las propiedades top, right, bottom y left para mover el elemento desde su posición normal */
+    position: relative;
+    top: 10px;
+
+    width: 600px;
+    background-color: #eeeee9;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px;
+    /* margenes que ocupan una linea de codigo */
+    /*margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 60px;*/
+    /* margenes todo en una sola linea de codigo */
+    /* margin: 15px 30px 45px 60px;  margin: top right bottom left los valores se asignan como manecilla de reloj */
+    /* margin: 30px 60px; margen en la parte ariba y abajo de 30px y en la parte izquierda y derecha de 60px */
+    padding: 15px;
+    /* al igual que los margenes, el padding se puede asignar en una sola linea de codigo */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* agrega una sombra al elemento, 
+    el valor se asigna en px para el desplazamiento horizontal y vertical, 
+    el desenfoque y el color de la sombra */
+}
+.card-body{
+    padding: 15px;
+}
+
+.card-body h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #272727 !important;
+    text-align: center;
+}
+.card-body p{
+    text-align: justify ; /* el valor important hace que esta propiedad tenga prioridad sobre cualquier otra propiedad que se le asigne al mismo elemento */
+    font-size: 20px ;
+    color: #272727 ;
+}   
