@@ -1,0 +1,65 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+body{
+    background-color: #e4c1f9;
+}
+
+h1{
+    color: #590d22;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container{
+    border: 2px solid #590d22;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; /* funciona cuando el flex-direction es column, alinea los items en el eje horizontal */
+    
+    justify-content: flex-start; /* funciona cuandp el flex-direction es row, alinea los items en el eje vertical */
+}
+
+.box{
+    background-color: #ffd6a5;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container2{
+    border: 2px solid #590d22;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around; /* distribuye el espacio entre los items de manera uniforme */
+    align-items: center; /* alinea los items en el eje vertical */
+}
+
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* distribuye el espacio entre los items de manera uniforme */
+    align-items: center; /* alinea los items en el eje horizontal */
+}
+
+.subcontainer2{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* alinea los items en el eje vertical */
+}
+
+.pinterest{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* alinea los items en el eje horizontal */
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinea los items en el eje horizontal */
+}
