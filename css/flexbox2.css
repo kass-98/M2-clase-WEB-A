@@ -1,0 +1,62 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+body{
+    background-color: #e4c1f9;
+}
+main{
+    display: flex;
+    background-color: aqua;
+}
+header{
+    background-color: #ecf380;
+}
+
+section{
+    flex: 3;
+    background-color: #0d5159;
+}
+aside{
+    flex: 1;
+    background-color: #590d22;
+
+}
+footer{
+    background-color: #ecf380;
+}
+
+.btn{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    }
+
+  button{
+    background-color: #590d22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #a7c957;
+    color: #386641;
+}
+
+/* Flex-wrap: permite que los items se envuelvan a la siguiente línea si no caben en una sola línea */
+.container{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* espacio entre los items */
+}
+.box{
+    background-color: #ffd6a5;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
