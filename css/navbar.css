@@ -37,11 +37,12 @@ header{
 }
 
 .hamburger{
-  display: flex;
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
   background-color: #0077b6;
+  
 }
 
 .hamburger span{
