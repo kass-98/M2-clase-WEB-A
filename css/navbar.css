@@ -96,7 +96,10 @@ vh (viewport height, porcentaje de la altura de la ventana) */
     background-color: #0077b6 !important;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+
+    justify-content: space-around;
+    align-content: center;
+
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -104,6 +107,7 @@ vh (viewport height, porcentaje de la altura de la ventana) */
     flex: 1;
     min-width: 200px;
     background-color: #0077b6 !important;
+    
 }
 .footer-section h2, .footer-section h3{
     color: white !important;
@@ -117,6 +121,8 @@ vh (viewport height, porcentaje de la altura de la ventana) */
 }
 .footer-section ul{
     list-style: none;
+    padding: 0; /*quita sangría */
+    margin: 0;  /*quita separación */
 }
 
 .footer-section ul li{
@@ -140,6 +146,9 @@ vh (viewport height, porcentaje de la altura de la ventana) */
     color: white !important;
     font-size: 12px;
     background-color: #0077b6 !important;
+}
+.footer-section:first-child{
+    flex-grow: 2; /*la primera columna ocupará mas espacio*/
 }
 
 /*Parte responsiva - parte de navegación*/
