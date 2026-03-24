@@ -1,0 +1,85 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0077b6;
+  color: white;
+}
+
+header{
+  background-color: #0077b6;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #0077b6;
+  color: white;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s; /*transicion para el efecto hover*/
+}
+
+.nav-links a:hover{
+  color: #90e0ef;
+  font-size: 20px;
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background-color: #0077b6;
+}
+
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s; /*transicion para el efecto hover*/
+}
+/* las unidades de medida son: 
+px (píxeles), 
+em (relativo al tamaño de la fuente del elemento), 
+rem (relativo al tamaño de la fuente raíz),
+% (porcentaje del tamaño del elemento padre),
+vw (viewport width, porcentaje del ancho de la ventana), 
+vh (viewport height, porcentaje de la altura de la ventana) */
+
+@media (max-width: 768px) {
+
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #0077b6 !important;
+        flex-direction: column;
+        width: 200px;
+        height: calc(100vh - 70px);
+        padding-top: 20px;
+
+        transform: translateX(100%); /* oculta el menú al moverlo completamente a la derecha */
+        transition: 0.3s;   /* transición para el efecto de apertura del menú */
+    }
+    .nav-links.active{
+        transform: translateX(0); /* muestra el menú al moverlo a su posición original */
+    }
+
+    .hamburger{
+        display: flex;
+
+    }
+}
