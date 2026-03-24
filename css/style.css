@@ -137,8 +137,9 @@ h1{
     color: #386641;
 }
 .card_image{
-    width: 50%; /* cambia el ancho de la imagen, el valor se puede asignar en px, em, rem, etc. */
-    border-radius: 15px; /* redondea las esquinas de la imagen, el valor se puede asignar en px, em, rem, etc. */
+    width: 200px; /* cambia el ancho de la imagen, el valor se puede asignar en px, em, rem, etc. */
+    border-radius: 10px; /* redondea las esquinas de la imagen, el valor se puede asignar en px, em, rem, etc. */
+    height: auto;
 }
 
 /* las unidades de medida son: 
@@ -162,7 +163,8 @@ right: 10px;
     width: 600px;
     background-color: #eeeee9;
     border-radius: 15px;
-    display: inline-block;
+    display: flex;
+    gap: 20px;
     margin: 10px;
     /* margenes que ocupan una linea de codigo */
     /*margin-top: 15px;
@@ -180,6 +182,9 @@ right: 10px;
 }
 .card-body{
     padding: 15px;
+    display: flex;
+    flex-direction: column;  /* Pone el título, párrafo y botón uno debajo del otro */
+    justify-content: center;
 }
 
 .card-body h3{
