@@ -220,3 +220,29 @@ el elemento se pega a su posición original hasta que se alcanza un punto espec�
     bottom: 20px;
     right: 20px;
 } */
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; 
+        width: 90%;             
+        margin: 10px auto;      /* Centra la card */
+    }
+
+    .card_image {
+        width: 100%;            /* Imagen ocupa todo el ancho disponible */
+        max-width: 300px;       
+        margin: 0 auto;         /* Centra la imagen */
+    }
+
+    .card-body {
+        padding: 10px;
+        align-items: center;    /* Centra título, texto y botón */
+        text-align: center;
+    }
+
+    .card-button {
+        width: 100%;            /* Botón ocupa todo el ancho */
+        max-width: 200px;       /* Limita tamaño máximo */
+    }
+}
