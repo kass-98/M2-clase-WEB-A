@@ -84,3 +84,163 @@ vh (viewport height, porcentaje de la altura de la ventana) */
 
     }
 }
+
+.footer{
+    background-color: #0077b6 !important;
+    color: white !important;
+    padding: 50px 20px 20px;
+}
+
+.footer-container{
+    max-width: 1200px;
+    background-color: #0077b6 !important;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footer-section{
+    flex: 1;
+    min-width: 200px;
+    background-color: #0077b6 !important;
+}
+.footer-section h2, .footer-section h3{
+    color: white !important;
+    margin-bottom: 20px;
+}
+
+.footer-section p{
+    color: white !important;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.footer-section ul{
+    list-style: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+.footer-section a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s; /* transición para el efecto hover */
+}
+
+.footer-section a:hover{
+    color: #90e0ef !important;
+    font-size: 16px;
+}
+.footer-bottom{
+    border-top: 1px solid #375baa;
+    text-align: center;
+    margin-top: 20px;
+    color: white !important;
+    font-size: 12px;
+    background-color: #0077b6 !important;
+}
+
+/*Parte responsiva - parte de navegación*/
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section{
+        text-align: center;
+    }
+}
+
+.cookie-banner{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none; /* permite que los clics pasen a través del banner */
+
+    background-color: #b600983e !important;
+    color: white !important;
+}
+
+.cookie-content{
+    pointer-events: auto; /* permite que los clics interactúen con el contenido del banner */
+    width: min(1100px, 100%); /* limita el ancho del contenido a 1100px o al 100% del ancho de la pantalla, lo que sea menor */
+    background-color: #b60098 !important;
+    color: white !important;
+    border: 1px solid #b60098;
+    border-radius: 15px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.cookie-content p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4; /* aumenta el espacio entre líneas para mejorar la legibilidad */
+    color: white !important;
+}
+
+.cookie-link{
+   text-decoration: underline;
+   color: wheat !important;
+   margin-left: 6px;
+}
+.cookie-actions{
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* evita que los botones se reduzcan de tamaño cuando el espacio es limitado */
+    background-color: #b60098 !important;
+ }
+
+ .cookie-btn{
+  border:0;
+  border-radius:10px;
+  padding:10px 14px;
+  font-size:14px;
+  cursor:pointer;
+  transition:transform .06s ease, opacity .2s ease;
+}
+.cookie-btn:active{
+    transform:scale(.95);
+}
+
+.cookie-btn--primary{
+  background:#39aee1;
+  color:#111;
+}
+
+.cookie-btn--ghost{
+  background:transparent;
+  color:#ffffff;
+  border:1px solid #3a3a3a;
+  opacity:.9;
+}
+
+.cookie-btn--ghost:hover{
+  opacity:1;
+}
+
+@media (max-width:768px){
+  .cookie-content{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .cookie-actions{
+    width:100%;
+  }
+
+  .cookie-btn{
+    width:100%;
+  }
+}
